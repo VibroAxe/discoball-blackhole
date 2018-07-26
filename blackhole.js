@@ -21,7 +21,6 @@ class blackholeModule {
 		var dclient = this.bot.dclient;
 		var channels = this.bot.config.moduleConfigs.blackhole.channels;
 		var cont = false;
-		console.log(channels);
 		for(var x in channels) {
 			var bchannel = channels[x];
 			if (channel.id == bchannel.id) {
@@ -37,11 +36,9 @@ class blackholeModule {
 		if (!cont) {
 			return;
 		}
-		console.log("Selected channel");
 		if (msg.author.id == dclient.user.id) {
 			return;
 		}
-		console.log("Deleting message");
 		msg.delete({timeout: 1000 }).catch();
 	}
 
