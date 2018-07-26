@@ -1,0 +1,14 @@
+{
+    "name": "Blackhole",
+    "author": {
+       "name": "VibroAxe",
+       "email": "vibs@macrolevel.co.uk"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VibroAxe/discoball-blackhole.git"
+    },
+    "entryPoints": [
+        "blackhole.js"
+    ]
+}
